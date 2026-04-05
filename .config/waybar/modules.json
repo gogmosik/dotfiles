@@ -1,0 +1,53 @@
+{
+    "hyprland/workspaces": {
+        "disable-scroll": false,
+        "all-outputs": true,
+        "format": "{id}",
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
+        "persistent_workspaces": {
+            "1": [], "2": [], "3": [], "4": [], "5": []
+        }
+    },
+
+    "custom/cpu-temp": {
+        "format": "{}°C",
+        "tooltip": false,
+        "interval": 5,
+        "exec": "sensors 2>/dev/null | grep -m1 'Tctl' | awk '{print $2}' | tr -d '+°C' | cut -d. -f1 || echo '?'",
+        "on-click": "kitty -e watch -n 1 sensors"
+    },
+
+    "custom/gpu-temp": {
+        "format": "{}°C",
+        "tooltip": false,
+        "interval": 5,
+        "exec": "sensors | grep -o 'edge:.*°C' | awk '{print int($2)}'",
+    },
+
+    "clock": {
+        "format": "{:%H:%M}",
+        "tooltip-format": "<big>{:%Y-%m-%d}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    "tray": {
+        "icon-size": 18,
+        "spacing": 8
+    },
+
+    "custom/updates": {
+        "format": "{}",
+        "exec": "~/.config/waybar/updates.sh",
+        "interval": 600,
+        "return-type": "json",
+        "on-click": "alacritty -e yay -Syu"
+    },
+    "custom/audio": {
+    "format": "{}",
+    "tooltip": false,
+    "interval": 1,
+    "exec": "~/.config/waybar/audio.sh",
+    "return-type": "json",
+    "on-click": "pavucontrol"
+    }
+}

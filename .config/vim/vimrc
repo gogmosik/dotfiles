@@ -1,0 +1,25 @@
+set number
+
+syntax on
+
+set tabstop=4
+set shiftwidth=4
+set expandtab 
+
+set autoindent
+set smartindent
+
+call plug#begin()
+Plug 'sainnhe/everforest'
+Plug 'preservim/nerdtree'
+call plug#end()
+
+"everforest
+colorscheme everforest
+set background=dark
+let g:everforest_background = 'medium'
+let g:everforest_better_performance = 1
+let g:everforest_enable_italic = 1
+let g:everforest_disable_italic_comment = 0
+
+"nerdTree

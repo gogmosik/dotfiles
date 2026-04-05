@@ -1,0 +1,34 @@
+font=JetBrainsMono Nerd Font 11
+width=340
+height=120
+margin=5
+padding=16
+border-size=2
+border-radius=16
+background-color=#272e33dd
+border-color=#83c092
+text-color=#d3c6aa
+progress-color=over #a7c080
+icon-path=/usr/share/icons/Papirus
+default-timeout=5000
+ignore-timeout=0
+
+layer=overlay
+anchor=top-right
+max-icon-size=64
+
+group-by=app-name
+max-history=10
+
+[urgency=low]
+border-color=#7fbbb3
+background-color=#272e33cc
+
+[urgency=normal]
+border-color=#83c092
+background-color=#272e33dd
+
+[urgency=critical]
+border-color=#e67e80
+background-color=#e67e80dd
+default-timeout=0
