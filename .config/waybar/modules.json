@@ -23,6 +23,7 @@
         "tooltip": false,
         "interval": 5,
         "exec": "sensors | grep -o 'edge:.*°C' | awk '{print int($2)}'",
+        "on-click": "lact"
     },
 
     "clock": {
