@@ -13,7 +13,7 @@
     "custom/cpu-temp": {
         "format": "{}°C",
         "tooltip": false,
-        "interval": 5,
+        "interval": 3,
         "exec": "sensors 2>/dev/null | grep -m1 'Tctl' | awk '{print $2}' | tr -d '+°C' | cut -d. -f1 || echo '?'",
         "on-click": "kitty -e watch -n 1 sensors"
     },
@@ -21,7 +21,7 @@
     "custom/gpu-temp": {
         "format": "{}°C",
         "tooltip": false,
-        "interval": 5,
+        "interval": 3,
         "exec": "sensors | grep -o 'edge:.*°C' | awk '{print int($2)}'",
         "on-click": "lact"
     },
