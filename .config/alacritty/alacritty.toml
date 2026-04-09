@@ -1,6 +1,6 @@
 [general]
 import = [
-    "~/.config/alacritty/themes/themes/everforest_dark.toml"
+    "~/.dotfiles/.config/alacritty/themes/themes/everforest_dark.toml"
 ]
 [font]
 normal = { family = "JetBrains Mono Medium", style = "Regular" }

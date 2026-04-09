@@ -17,6 +17,8 @@ set -gx VISUAL kate
 
 set -gx SSH_AUTH_SOCK $XDG_RUNTIME_DIR/ssh-agent.socket
 
+set -x LC_TIME ru_RU.UTF-8
+
 # pnpm
 set -gx PNPM_HOME "/home/gogmosik/.local/share/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
