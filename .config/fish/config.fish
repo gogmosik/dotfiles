@@ -6,6 +6,7 @@ alias rm="rmt"
 alias ls="lsd"
 alias cat="bat"
 alias hyprconf="vim ~/.config/hypr/hyprland.conf"
+alias v="vim"
 
 set -g fish_color_user green
 set fish_greeting ""
