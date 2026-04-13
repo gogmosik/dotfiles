@@ -6,5 +6,5 @@
 
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["custom/cpu-temp", "clock", "custom/gpu-temp"],
-    "modules-right": ["custom/updates", "custom/audio", "tray"]
+    "modules-right": ["custom/audio", "tray"]
 }
