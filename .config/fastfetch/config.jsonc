@@ -238,7 +238,7 @@
     {
       "type": "memory",
       "keyIcon": "",
-      "format": "32 GiB ({percentage})",
+      "format": "{total} ({percentage})",
       "percent": {
         "green": 50,
         "yellow": 80,
@@ -257,7 +257,7 @@
 //    },
     {
       "type": "disk",
-     "format": "440 GiB",
+      "format": "490 GiB",
       "keyIcon": "",
       "showRegular": true,
       "showExternal": true,
