@@ -29,8 +29,3 @@ end
 
 # Created by `pipx` on 2026-02-05 16:20:34
 set PATH $PATH $HOME/.local/bin
-
-
-# >>> grok installer >>>
-fish_add_path $HOME/.grok/bin
-# <<< grok installer <<<
