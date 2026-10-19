@@ -14,7 +14,7 @@ fastfetch
 echo
 
 set -gx EDITOR vim
-set -gx VISUAL kate
+set -gx LLAMA_CACHE $HOME/models
 
 set -gx SSH_AUTH_SOCK $XDG_RUNTIME_DIR/ssh-agent.socket
 
