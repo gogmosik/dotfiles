@@ -2,7 +2,6 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-alias rm="rmt"
 alias ls="lsd"
 alias cat="bat"
 alias hyprconf="vim ~/.dotfiles/.config/hypr/hyprland.lua"
