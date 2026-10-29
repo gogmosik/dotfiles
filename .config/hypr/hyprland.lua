@@ -93,6 +93,12 @@ hl.env("HYPRCURSOR_SIZE", 24)
 -- https://wiki.hypr.land/Configuring/Variables/#general
 
 hl.config({
+    render = {
+        cm_auto_hdr = 0,
+    },
+})
+
+hl.config({
     general = {
         gaps_in = 6,
         gaps_out = 8,
