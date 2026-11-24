@@ -4,7 +4,7 @@ end
 
 alias ls="lsd"
 alias cat="bat"
-alias hyprconf="vim ~/.dotfiles/.config/hypr/hyprland.lua"
+alias hyprconf="vim ~/.config/hypr/hyprland.lua"
 alias v="vim"
 
 set -g fish_color_user green
